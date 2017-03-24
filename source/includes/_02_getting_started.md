@@ -1,21 +1,32 @@
 # Getting Started
 
-> To authorize, use this code:
+## Primer
 
-```javascript
-const kittn = require('kittn');
+First you have to grab yourself a bot token from the [Discord developer panel](https://discordapp.com/developers/applications/me). Click on **"New App"**, add a name and hit **"Create App"**. Next you have to turn this app into a bot by pressing the **"Create a Bot User"** button. And now you can see (or not really, it's revealed) your bot **Token**. Copy and save it you'll need this again later :).
 
-let api = kittn.authorize('meowmeowmeow');
+## Setup isic via npm
+
+> To install isic, simply:
+
+```bash
+npm install --save isic
+```
+Install the ``isic`` package via npm and import it.
+
+> Importing the Bot class and provide the neccessary settings
+
+```js
+const {Bot} = require("isic")
+
+let bot = new Bot({
+    token: "YOUR_DISCORD_TOKEN",
+    database: {
+        username: "MONGODB_USERNAME",
+        password: "MONGODB_PASSWORD"
+    }
+})
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
-
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
-
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must have a running MongoDB server.
 </aside>
