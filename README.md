@@ -1,6 +1,6 @@
-# isic-docs
+# isic website
 
-Documentation for [isic](https://github.com/atomicptr/isic), powered by [slate](https://github.com/lord/slate).
+Website and Documentation for [isic](https://github.com/atomicptr/isic), powered by [slate](https://github.com/lord/slate).
 
 ## How to test
 
