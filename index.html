@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<title>isic, a modular Discord bot</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="stylesheets/custom.css" rel="stylesheet" type="text/css" />
+
+<link rel="icon" href="images/isic.svg">
+<link rel="shortcut icon" href="images/logo.ico">
+
+<div class="container">
+
+    <section class="header">
+
+        <div class="logo">
+            <img src="images/isic.svg" />
+        </div>
+        <h2 class="title">isic, a modular Discord bot.</h2>
+        <a class="button" target="_blank" href="https://github.com/atomicptr/isic"><i class="fa fa-github"></i> GitHub</a>
+        <a class="button" target="_blank" href="docs.html"><i class="fa fa-book"></i> Documentation</a>
+<!--
+        <div class="value-props row">
+            <div class="four columns value-prop">
+                <i class="fa fa-github"></i>
+                Feature #1
+            </div>
+            <div class="four columns value-prop">
+                <i class="fa fa-github"></i>
+                Feature #2
+            </div>
+            <div class="four columns value-prop">
+                <i class="fa fa-github"></i>
+                Feature #3
+            </div>
+        </div>
+    </section>
+-->
+<!--
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a class="navbar-link" href="#getting-started">Getting Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="docs-section" id="getting-started">
+        <h6 class="docs-header">Getting Started</h6>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+-->
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    function onScroll() {
+        if($(".navbar").offset().top < $(window).scrollTop() && !$("body").hasClass("has-docked-nav")) {
+            $("body").addClass("has-docked-nav")
+        }
+        if($(".navbar").offset().top > $(window).scrollTop() && $("body").hasClass("has-docked-nav")) {
+            $("body").removeClass("has-docked-nav")
+        }
+    }
+
+    $(document).ready(function() {
+        $(window).on("scroll", onScroll)
+        $(window).on("resize", onScroll)
+
+        onScroll()
+    })
+</script>

@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>isic Documentation</title>
+
+    <link rel="icon" href="images/isic.svg">
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="docs" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" alt="Logo" />
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/atomicptr/isic'><i class="fa fa-github"></i> isic on Github</a></li>
+            <li><a href="https://discord.js.org">Powered by discord.js</a></li>
+            <li><br/><a href="https://js.org" target="_blank" title="JS.ORG | JavaScript Community"><img src="https://logo.js.org/bright_tiny.png" width="77" alt="JS.ORG Logo"/></a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        
+          <h1 id="introduction">Introduction</h1>
+
+<p>Welcome to the (work in progress) isic documentation!</p>
+
+<h3 id="about">About</h3>
+
+<p>isic is a modular <a href="https://discordapp.com">Discord</a> bot/framework.</p>
+
+<ul>
+<li>Designed with <a href="https://discordapp.com">Discord</a> <i class="fa fa-heart"></i> unique aspects in mind.</li>
+<li>Easy to integrate into any node.js application</li>
+<li>Extensible with modules, manageable via <a href="https://www.npmjs.com/">npm</a></li>
+<li><strong>SOON</strong>: Web UI to configure modules on a by server basis.</li>
+<li>Running on the powerful <a href="https://discord.js.org">discord.js</a> framework</li>
+<li>The robot/icon is CC by Oksana Latysheva</li>
+</ul>
+
+          <h1 id="getting-started">Getting Started</h1>
+
+<h2 id="primer">Primer</h2>
+
+<p>First you have to grab yourself a bot token from the <a href="https://discordapp.com/developers/applications/me">Discord developer panel</a>. Click on <strong>&ldquo;New App&rdquo;</strong>, add a name and hit <strong>&ldquo;Create App&rdquo;</strong>. Next you have to turn this app into a bot by pressing the <strong>&ldquo;Create a Bot User&rdquo;</strong> button. And now you can see (or not really, it&rsquo;s revealed) your bot <strong>Token</strong>. Copy and save it you&rsquo;ll need this again later :).</p>
+
+<aside class="notice">
+You must have a running MongoDB server.
+</aside>
+
+<h2 id="setup-isic-via-npm">Setup isic via npm</h2>
+
+<blockquote>
+<p>To install isic, simply:</p>
+</blockquote>
+<pre class="highlight shell"><code>npm install --save isic
+</code></pre>
+<p>Install the <code class="prettyprint">isic</code> package via npm and import it.</p>
+
+<blockquote>
+<p>Import the Bot class and provide the neccessary settings</p>
+</blockquote>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="p">{</span><span class="nx">Bot</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"isic"</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">bot</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Bot</span><span class="p">({</span>
+    <span class="na">token</span><span class="p">:</span> <span class="s2">"YOUR_DISCORD_TOKEN"</span><span class="p">,</span>
+    <span class="na">database</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">// you can also change host: and port: here...</span>
+        <span class="na">username</span><span class="p">:</span> <span class="s2">"MONGODB_USERNAME"</span><span class="p">,</span>
+        <span class="na">password</span><span class="p">:</span> <span class="s2">"MONGODB_PASSWORD"</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+<p>Running this script starts the Bot with the minimal setup, as in not loading 3rd party modules and using a few builtin modules like <code class="prettyprint">@BotName ping</code>.</p>
+
+<h2 id="setup-directly">Setup directly</h2>
+
+<p>To run isic directly simply <a href="https://github.com/atomicptr/isic/releases">download the newest release</a> or clone the repository via:</p>
+
+<p><code class="prettyprint">git clone git@github.com:atomicptr/isic.git</code>.</p>
+
+<p>You have to rename the <code class="prettyprint">config.template.json</code> file to <code class="prettyprint">config.json</code> and edit it:</p>
+
+<ol>
+<li>Add your Discord token to this line <code class="prettyprint">&quot;token&quot;: &quot;YOUR_DISCORD_TOKEN&quot;,</code></li>
+<li>Change <code class="prettyprint">&quot;username&quot;: ...</code> and <code class="prettyprint">&quot;password&quot;: ...</code> to the appropriate authentication details of your MongoDB installation.</li>
+<li>Start the bot via <code class="prettyprint">npm start</code></li>
+</ol>
+
+<p>Done. You should have a running Bot, which loads modules from <code class="prettyprint">./node_modules/</code> and <code class="prettyprint">./modules/</code>.</p>
+
+          <h1 id="custom-modules">Custom Modules</h1>
+
+<p>This part of the documentation is dedicated to writing your own custom modules.</p>
+
+<h2 id="module-structure">Module structure</h2>
+
+<p>The directory structure of a module usually looks like this:</p>
+
+<blockquote>
+<p>A typical module structure</p>
+</blockquote>
+<pre class="highlight shell"><code>    my_module/
+        module.json
+        my_module.js
+</code></pre>
+<p>The general structure is up to you though, you only have to have:</p>
+
+<ul>
+<li>A directory which contains the module</li>
+<li>A module.json file</li>
+<li>At least one .js file as entry point</li>
+</ul>
+
+<p>Which means you could technically write your modules in for instance CoffeeScript and compile that script into a file, which then serves as your entry point.</p>
+
+<p>Or split the file into multiple files, whatever makes you happy.</p>
+
+<h2 id="the-module-json-file">The module.json file</h2>
+
+<p>All isic modules must contain a file called <code class="prettyprint">module.json</code> in their root - this file holds various information relevant to isic.</p>
+
+<blockquote>
+<p>module.json example</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My Module"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"com.example.my-module"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"main"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my_module.js"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>The module.json file must contain valid JSON (No comments!).</p>
+
+<h3 id="name">Name</h3>
+
+<p>The name of the module</p>
+
+<h3 id="identifier">Identifier</h3>
+
+<p><strong>NOTE</strong>: The identifier has to be unique or else your module won&rsquo;t be loaded, it&rsquo;s common practice to either use your URL like this:</p>
+
+<ul>
+<li>com.example.module-name</li>
+<li>com.google.module-name</li>
+<li>org.js.isic.fancy-module</li>
+</ul>
+
+<p>or to identify them by for instance your Github username (which is what I prefer):</p>
+
+<ul>
+<li>github.atomicptr.fancy-module</li>
+<li>github.atomicptr.isic-rss</li>
+<li>github.isic.fancy-module2</li>
+</ul>
+
+<h3 id="main">Main</h3>
+
+<p>The heart of your module, isic will load this JavaScript file which adds actions and other custom behaviour to the bot.</p>
+
+<blockquote>
+<p>An example for a JavaScript file in &ldquo;main&rdquo;</p>
+</blockquote>
+<pre class="highlight javascript"><code><span class="nx">module</span><span class="p">.</span><span class="kr">export</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">bot</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">bot</span><span class="p">.</span><span class="nx">command</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">,</span> <span class="p">(</span><span class="nx">res</span><span class="p">,</span> <span class="nx">args</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">reply</span><span class="p">(</span><span class="s2">"Hello, Human!"</span><span class="p">))</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id="requires-permission">Requires Permission</h3>
+
+<p>The <code class="prettyprint">requiresPermission</code> option allows you to block your module in servers where the bot doesn&rsquo;t have the specified permissions, for instance
+writing a module which can kick or ban people wouldn&rsquo;t make much sense if isic doesn&rsquo;t have the <strong>KICK_MEMBERS</strong> or <strong>BAN_MEMBERS</strong> permission.</p>
+
+<p>This field accepts a JSON array with the permission names as paramters: <code class="prettyprint">&quot;requiresPermission&quot;: [&quot;KICK_MEMBERS&quot;, &quot;BAN_MEMBERS&quot;]</code>.</p>
+
+<aside class="notice">
+You can find the list of permissions <a href="https://discordapp.com/developers/docs/topics/permissions" target="_blank">here</a>.
+</aside>
+
+<h3 id="ignore-dm">Ignore DM</h3>
+
+<p>The <code class="prettyprint">ignoredm</code> option allows you to&hellip; well ignore Direct Messages if set to <code class="prettyprint">true</code>.</p>
+
+<h2 id="actions">Actions</h2>
+
+<p>An <code class="prettyprint">Action</code> is defined as something isic can interact with/react to, there are currently 4 different types of actions:</p>
+
+<ul>
+<li><strong>Command</strong>, a command prefixed (usually) by <code class="prettyprint">!</code> for instance typing <code class="prettyprint">!hello</code> into the chat will trigger the command <code class="prettyprint">hello</code></li>
+<li><strong>Hear</strong>, this action will be executed when the bot &ldquo;hears&rdquo; a certain keyword</li>
+<li><strong>Respond</strong>, actions which are prefixed by mentioning the bot via <code class="prettyprint">@BotName do something for me, pal</code></li>
+<li><strong>Interval</strong>, the only interaction not caused by the user but instead by an internal timer that emits a signal every (default setting) 5 minutes.</li>
+</ul>
+
+<h2 id="command-action">&mdash; Command Action</h2>
+
+<blockquote>
+<p>&ldquo;hello&rdquo; command</p>
+</blockquote>
+<pre class="highlight javascript"><code><span class="nx">bot</span><span class="p">.</span><span class="nx">command</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">,</span> <span class="p">(</span><span class="nx">res</span><span class="p">,</span> <span class="nx">args</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">reply</span><span class="p">(</span><span class="s2">"Hello!"</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>&ldquo;echo&rdquo; command</p>
+</blockquote>
+<pre class="highlight javascript"><code><span class="nx">bot</span><span class="p">.</span><span class="nx">command</span><span class="p">(</span><span class="s2">"echo"</span><span class="p">,</span> <span class="p">(</span><span class="nx">res</span><span class="p">,</span> <span class="nx">args</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">args</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">))</span>
+<span class="p">})</span>
+</code></pre>
+<p>A <strong>Command</strong> is an action prefixed (usually) by an <code class="prettyprint">!</code>, you can trigger this action for instance by typing something like <code class="prettyprint">!hello</code> into the chat.
+This will run a command called <code class="prettyprint">hello</code>.</p>
+
+<p>The callback of a <strong>Command</strong> equips you with 2x parameters, a <strong>Response</strong> object (more about this later) and an array of <strong>Arguments</strong>.</p>
+
+<p>You can also provide arguments to a command like this: <code class="prettyprint">!echo Hello World!</code>, in this case the arguments given to the callback would be <code class="prettyprint">[&quot;Hello&quot;, &quot;World!&quot;]</code></p>
+
+<h2 id="hear-action">&mdash; Hear Action</h2>
+
+<blockquote>
+<p>kappa</p>
+</blockquote>
+<pre class="highlight javascript"><code><span class="nx">bot</span><span class="p">.</span><span class="nx">hear</span><span class="p">(</span><span class="sr">/kappa/ig</span><span class="p">,</span> <span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">reply</span><span class="p">(</span><span class="s2">"https://img-url.to/a/kappa-image.png"</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>&ldquo;Hear&quot;ing an emoji</p>
+</blockquote>
+<pre class="highlight javascript"><code><span class="nx">bot</span><span class="p">.</span><span class="nx">hear</span><span class="p">(</span><span class="sr">/👍/g</span><span class="p">,</span> <span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">canI</span><span class="p">(</span><span class="s2">"ADD_REACTIONS"</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">message</span><span class="p">.</span><span class="nx">react</span><span class="p">(</span><span class="s2">"👍"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+<p>When using <strong>Hear</strong> actions you usually want to make the bot react to certain phrases which users might post into chat.</p>
+
+<p>In contrast to commands instead of providing a string you have to supply a <strong>Hear</strong> action with a regular expression or RegEx in short. For instance if you want to
+react to someone saying hat, cat or rat you can add <code class="prettyprint">/(h|c|r)at/i</code> as parameter.</p>
+
+<p>The callback will also provide you with a <strong>Response</strong> object (more about this later).</p>
+
+<h2 id="respond-action">&mdash; Respond Action</h2>
+
+<p>&hellip;</p>
+
+<h2 id="interval-action">&mdash; Interval Action</h2>
+
+<p>&hellip;</p>
+
+<h2 id="permissions">Permissions</h2>
+
+<p>&hellip;</p>
+
+<h2 id="persistent-data">Persistent Data</h2>
+
+<p>&hellip;</p>
+
+<h2 id="the-module-interface">The Module Interface</h2>
+
+<p>&hellip;</p>
+
+<h2 id="the-response-object">The Response Object</h2>
+
+<p>&hellip;</p>
+
+          <h1 id="module-management">Module Management</h1>
+
+<h2 id="blah-blah-npm">blah blah npm</h2>
+
+<p>&hellip;</p>
+
+          <h1 id="awesome-modules">Awesome Modules</h1>
+
+<p>A list which contains some cool modules, you might want to try!</p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
