@@ -9,6 +9,8 @@ includes:
   - 01_introduction
   - 02_getting_started
   - 03_custom_modules
+  - 04_module_management
+  - 90_awesome_modules
 
 search: true
 ---
