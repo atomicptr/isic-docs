@@ -1,4 +1,4 @@
-# isic website
+# isic-docs
 
 Website and Documentation for [isic](https://github.com/atomicptr/isic), powered by [slate](https://github.com/lord/slate).
 

@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the isic documentation!
+Welcome to the (work in progress) isic documentation!
 
 ### About
 
